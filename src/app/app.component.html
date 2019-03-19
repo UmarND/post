@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2> Mes Posts </h2>
+      <ul class="list-group">
+
+        <app-post *ngFor="let post of posts"
+                  [postTitle]="post.title"
+                  [postContent]="post.content"
+                  [postLoveIts]="post.loveIts"
+                  [createdAt] ="post.createdAt"
+                  >
+
+        </app-post>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
